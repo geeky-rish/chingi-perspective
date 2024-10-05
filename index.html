@@ -9,19 +9,24 @@
     <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header class="bg-secondary-color text-white p-4 fixed w-full z-10">
-        <nav class="container mx-auto flex justify-between items-center">
-            <div class="logo">
-                <img src="https://i.ibb.co/QkSr2g4/20241005-110524-0000.png" alt="CHINGI PERSPECTIVE Logo" class="w-12 h-12">
-            </div>
-            <ul class="flex space-x-4">
-                <li><a href="index.html" class="hover:text-accent-color transition-colors">Home</a></li>
-                <li><a href="about.html" class="hover:text-accent-color transition-colors">About</a></li>
-                <li><a href="projects.html" class="hover:text-accent-color transition-colors">Projects</a></li>
-                <li><a href="blog.html" class="hover:text-accent-color transition-colors">Blog</a></li>
-                <li><a href="contact.html" class="hover:text-accent-color transition-colors">Contact</a></li>
-            </ul>
-        </nav>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <img src="https://i.ibb.co/QkSr2g4/20241005-110524-0000.png" alt="CHINGI PERSPECTIVE Logo">
+                </div>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul id="navMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
@@ -66,8 +71,8 @@
         </section>
     </main>
 
-    <footer class="bg-secondary-color text-white py-8">
-        <div class="container mx-auto text-center">
+    <footer>
+        <div class="container">
             <p>&copy; 2024 CHINGI PERSPECTIVE. All rights reserved.</p>
             <div class="mt-4 space-x-4">
                 <a href="#" target="_blank" rel="noopener noreferrer" class="text-white hover:text-accent-color transition-colors">

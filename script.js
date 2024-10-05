@@ -1,11 +1,26 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Header scroll effect
     const header = document.querySelector('header');
+    const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+    const navMenu = document.getElementById('navMenu');
+
+    // Header scroll effect
     window.addEventListener('scroll', () => {
         if (window.scrollY > 50) {
             header.classList.add('scrolled');
         } else {
             header.classList.remove('scrolled');
+        }
+    });
+
+    // Mobile menu toggle
+    mobileMenuToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('show');
+    });
+
+    // Close mobile menu when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!header.contains(e.target) && navMenu.classList.contains('show')) {
+            navMenu.classList.remove('show');
         }
     });
 
@@ -19,14 +34,5 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Social links hover effect
-    const socialLinks = document.querySelectorAll('.social-link');
-    socialLinks.forEach(link => {
-        link.addEventListener('mouseenter', () => {
-            link.style.transform = 'translateY(-5px)';
-        });
-        link.addEventListener('mouseleave', () => {
-            link.style.transform = 'translateY(0)';
-        });
-    });
+    // Add any page-specific JavaScript here
 });
