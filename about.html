@@ -6,19 +6,20 @@
     <title>About - CHINGI PERSPECTIVE</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <!-- Replace 'your-fontawesome-kit.js' with your actual Font Awesome Kit URL -->
     <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
         <div class="container">
-            <nav>
+            <nav class="flex justify-between items-center py-4">
                 <div class="logo">
                     <img src="https://i.ibb.co/QkSr2g4/20241005-110524-0000.png" alt="CHINGI PERSPECTIVE Logo">
                 </div>
-                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle navigation menu">
                     <i class="fas fa-bars"></i>
                 </button>
-                <ul id="navMenu">
+                <ul id="navMenu" class="hidden md:flex space-x-6">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="projects.html">Projects</a></li>

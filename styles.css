@@ -29,6 +29,7 @@ body {
 .text-primary-color { color: var(--primary-color); }
 .text-secondary-color { color: var(--secondary-color); }
 .text-accent-color { color: var(--accent-color); }
+.text-center { text-align: center; } /* Added for centering text */
 
 /* Header styles */
 header {
@@ -60,6 +61,19 @@ nav {
   transform: scale(1.1);
 }
 
+/* Beta Badge Styles */
+.beta-badge {
+  display: inline-block;
+  background-color: #FFCC00; /* Yellow background */
+  color: #000; /* Black text */
+  padding: 5px 10px; /* Padding for better appearance */
+  border-radius: 5px; /* Rounded corners */
+  font-weight: bold; /* Bold text */
+  position: relative; /* Allows for absolute positioning of the badge */
+  top: -5px; /* Adjusts the vertical position */
+  margin-left: 10px; /* Spacing between logo and badge */
+}
+
 nav ul {
   display: flex;
   list-style: none;
@@ -83,7 +97,7 @@ nav ul li a:hover {
 
 /* Main content styles */
 main {
-  padding-top: 80px;
+  padding-top: 80px; /* Adjusted to account for fixed header */
 }
 
 .section {
@@ -145,6 +159,10 @@ main {
   outline: none;
   border-color: var(--primary-color);
   box-shadow: 0 0 0 2px rgba(42, 157, 143, 0.2);
+}
+
+#contact p {
+  text-align: center; /* Centers the paragraph text */
 }
 
 .social-link {
