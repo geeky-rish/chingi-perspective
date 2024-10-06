@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://geeky-rish.github.io/chingi-perspective/sitemap.xml
